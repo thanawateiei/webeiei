@@ -1,0 +1,39 @@
+﻿@model IEnumerable<WebVanProject.Models.Detail>
+@{
+}
+<h1>  detail</h1>
+<table>
+  <tr>
+    <th>Id</th>
+    <th>OriginProvince</th>
+    <th>TerminalProvince</th>
+    <th>OriginStation</th>
+    <th>TerminalStation</th>
+    <th>TravelDate</th>
+    <th>Price</th>
+    <th>Time</th>
+    <th>IdCar</th>
+
+
+  </tr>
+    @{
+        var i = 0;
+    }
+    @foreach (var item in Model)
+    {
+     
+    <tr>
+    <td>@item.Id</td>
+    <td>@item.OriginProvince</td>
+    <td>@item.TerminalProvince</td>
+    <td>@item.OriginStation</td>
+    <td>@item.TerminalStation</td>
+    <td>@item.TravelDate</td>
+    <td>@item.Price</td>
+    <td>@item.Time</td>
+    <td>@item.IdCar</td>
+
+
+  </tr>
+ }
+</table>
